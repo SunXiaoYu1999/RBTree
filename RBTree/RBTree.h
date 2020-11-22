@@ -120,7 +120,7 @@ void RBTree<T>::right_rotate(RbNode<T>* node)
 		else
 			node->parent->right = tmp;
 		node->parent = tmp;
-		tmp->left = node;
+		tmp->right = node;
 	}
 }
 
